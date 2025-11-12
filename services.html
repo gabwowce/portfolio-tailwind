@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Paslaugos — Gabrielė · Codeart</title>
+  <meta name="description" content="WordPress, React/React Native ir UI/UX paslaugos: nuo idėjos ir prototipų iki gyvo produkto. Greiti, prieinami ir estetiški sprendimai." />
+  <link rel="icon" href="../img/favicon.svg" type="image/svg+xml" />
+  <style>
+  .sticky-aside{
+    position: sticky;
+    top: 6rem;          /* atstumas nuo viršaus, kad nesiliestų su headeriu */
+    align-self: start;  /* kad neliptų vertikaliai */
+    height: fit-content;
+  }
+</style>
+  <!-- Tailwind (kompiliuotas) -->
+  <link rel="stylesheet" href="/styles/tailwind.css" />
+  <!-- JS (mobilus meniu ir pan.) -->
+  <script src="/js/script.js" defer></script>
+</head>
+
+<body class="bg-white text-gray-900 dark:bg-slate-950 dark:text-gray-100">
+  <!-- HEADER -->
+  <header class="border-b bg-white/80 backdrop-blur">
+    <nav class="container flex items-center justify-between py-5">
+      <a href="/portfolio-2025/" class="flex items-center gap-2 font-semibold">
+        <span class="inline-flex h-8 w-8 items-center justify-center rounded bg-brand text-white dark:bg-white dark:text-slate-900">GT</span>
+        <span aria-label="Gabrielė Tamaševičiūtė">Gabrielė · Codeart</span>
+      </a>
+      <div class="hidden gap-4 sm:flex justify-center items-center">
+        <a class="link" href="index.html">Pagrindinis</a>
+        <a class="link" href="about.html">Apie</a>
+        <a class="link" href="portfolio.html">Portfolio</a>
+        <a class="link" href="services.html">Paslaugos</a>
+        <a class="btn-outline" href="contact.html">Kontaktai</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+
+
+  <section class="section">
+  <div class="container grid items-center gap-10 lg:grid-cols-[1.2fr_.8fr]">
+    <div>
+      <span class="badge badge-soft">Paslaugos</span>
+      <h1 class="mt-3 text-4xl font-extrabold tracking-tight sm:text-5xl">
+          Nuo idėjos iki veikiančio produkto
+      </h1>
+      <p class="muted mt-4 text-lg">
+          Galiu startuoti nuo nulio arba prisijungti prie esamo projekto. Fokusas — aiškumas, našumas, prieinamumas ir estetiškas UI.
+          Dirbu su <b>WordPress</b>, <b>React/Next.js</b>, <b>React Native (Expo)</b> ir <b>Figma</b>.
+        </p>
+
+      <div class="mt-6 flex flex-wrap gap-3">
+       <a href="#svcs" class="btn btn-primary">Peržiūrėti paslaugas</a>
+          <a href="contact.html" class="btn btn-outline">Aptarti projektą</a>
+      </div>
+    </div>
+
+    <figure class="mx-auto max-w-md">
+      <div class="text-center">
+        <!-- gali keisti iliustraciją į koliažą su darbų miniatiūromis, jei turi -->
+        <img src="img/avatar-waving4.webp" class="mx-auto h-auto w-36 sm:w-52 lg:w-80" alt="Portfolio hero iliustracija">
+      </div>
+    </figure>
+  </div>
+</section>
+
+<!-- PASLAUGOS + ASIDE -->
+<main class="py-10 bg-brand-50">
+  <div class="container grid gap-8 lg:grid-cols-3 xl:gap-10">
+
+    <!-- KAIRĖ: PASLAUGOS -->
+   <section id="svcs" class="lg:col-span-2">
+
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
+        <!-- 1) WordPress -->
+        <article class="card card-hover h-full">
+          <div class="card-body">
+            <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-50 text-brand">
+              <!-- WP icon -->
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <circle cx="12" cy="12" r="9"></circle>
+                <path d="M4 12h16M8 4.5l6.5 15M15.5 4.5L9 19.5"></path>
+              </svg>
+            </div>
+
+            <h3 class="text-xl font-semibold">WordPress svetainės ir pritaikymas</h3>
+            <p class="muted mt-2">
+              Temos diegimas ir pritaikymas, dizaino atnaujinimai, nauja blokų/FSE tema ir tolimesni patobulinimai.
+            </p>
+
+            <ul class="mt-4 flex flex-wrap gap-2">
+              <li><span class="badge badge-outline">Temos adaptacija</span></li>
+              <li><span class="badge badge-outline">Tinkinti blokai / šablonai</span></li>
+              <li><span class="badge badge-outline">SEO ir greitis</span></li>
+              <li><span class="badge badge-outline">FSE, ACF, CPT</span></li>
+              <li><span class="badge badge-outline">Migracija ir perdavimas</span></li>
+            </ul>
+
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="chip">1. Analizė</span>
+              <span class="chip">2. Dizainas</span>
+              <span class="chip">3. Įgyvendinimas</span>
+              <span class="chip">4. Testavimas</span>
+              <span class="chip">5. Paleidimas</span>
+            </div>
+
+            <a href="services.html#contact-project" class="btn-primary mt-5">Pradėti projektą →</a>
+          </div>
+        </article>
+
+        <!-- 2) React / RN / Figma -->
+        <article class="card card-hover h-full">
+          <div class="card-body">
+            <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-50 text-brand">
+              <!-- React icon -->
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <circle cx="12" cy="12" r="2"></circle>
+                <ellipse cx="12" cy="12" rx="9" ry="4.5"></ellipse>
+                <ellipse cx="12" cy="12" rx="9" ry="4.5" transform="rotate(60 12 12)"></ellipse>
+                <ellipse cx="12" cy="12" rx="9" ry="4.5" transform="rotate(-60 12 12)"></ellipse>
+              </svg>
+            </div>
+
+            <h3 class="text-xl font-semibold">React / React Native + Figma</h3>
+            <p class="muted mt-2">
+              Kuriu naujas ar prisidedu prie esamų programų: dizainas, komponentai, API integracija, optimizavimas ir naujos funkcijos.
+            </p>
+
+            <ul class="mt-4 flex flex-wrap gap-2">
+              <li><span class="badge badge-outline">Komponentų bibliotekos</span></li>
+              <li><span class="badge badge-outline">API integracija</span></li>
+              <li><span class="badge badge-outline">Animacijos ir formos</span></li>
+              <li><span class="badge badge-outline">Našumo optimizavimas</span></li>
+              <li><span class="badge badge-outline">Kodo peržiūra</span></li>
+            </ul>
+
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="chip">1. Planavimas</span>
+              <span class="chip">2. Prototipavimas</span>
+              <span class="chip">3. Vystymas</span>
+              <span class="chip">4. Testavimas</span>
+              <span class="chip">5. Perdavimas</span>
+            </div>
+
+            <a href="services.html#contact-project" class="btn-primary mt-5">Pradėti projektą →</a>
+          </div>
+        </article>
+
+        <!-- 3) UI/UX -->
+        <article class="card card-hover h-full">
+          <div class="card-body">
+            <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-50 text-brand">
+              <!-- UI frame icon -->
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <rect x="4" y="4" width="16" height="16" rx="3"></rect>
+                <path d="M9 4v16M4 9h16"></path>
+              </svg>
+            </div>
+
+            <h3 class="text-xl font-semibold">UI/UX dizainas ir prototipai</h3>
+            <p class="muted mt-2">
+              Greiti prototipai idėjoms testuoti, aiškūs srautai, dizaino sistemos ir sklandus perdavimas programuotojams.
+            </p>
+
+            <ul class="mt-4 flex flex-wrap gap-2">
+              <li><span class="badge badge-outline">Wireframe’ai</span></li>
+              <li><span class="badge badge-outline">UI maketai</span></li>
+              <li><span class="badge badge-outline">Dizaino sistema</span></li>
+              <li><span class="badge badge-outline">Prototipai</span></li>
+            </ul>
+
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="chip">1. Atranka</span>
+              <span class="chip">2. Wireframe’ai</span>
+              <span class="chip">3. UI dizainas</span>
+              <span class="chip">4. Prototipavimas</span>
+              <span class="chip">5. Perdavimas</span>
+            </div>
+
+            <a href="services.html#contact-project" class="btn-primary mt-5">Pradėti projektą →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- DEŠINĖ: ASIDE (NEKEISTA) -->
+    <aside class="sticky-aside lg:col-span-1">
+      <div class="space-y-6">
+        <div class="card text-center">
+          <div class="card-body">
+            <div class="mx-auto mb-3 h-20 w-20 overflow-hidden rounded-full ring-2 ring-black/5 dark:ring-white/10">
+              <img src="../img/avatar-profile.webp" alt="Gabrielė – profilio nuotrauka" class="h-full w-full object-cover">
+            </div>
+            <h3 class="text-sm tracking-widest text-gray-500 dark:text-gray-400">GABRIELĖ</h3>
+            <p class="mt-1 font-medium">Frontend programuotoja</p>
+            <p class="muted text-sm">Vilnius, Lietuva</p>
+            <span class="badge badge-soft mt-3 inline-block">Atvira naujiems projektams</span>
+
+            <div class="mt-4 flex flex-col gap-2">
+              <a class="btn btn-primary w-full" href="mailto:gt1230112301@gmail.com">Parašyti el. laišką</a>
+              <a class="btn btn-outline w-full" href="../docs/CV.pdf" download>Atsisiųsti CV</a>
+            </div>
+          </div>
+        </div>
+        <!-- daugiau kortų pagal poreikį -->
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+
+  <!-- FOOTER (paprastas su CTA) -->
+  <footer role="contentinfo" class="pt-16 border-t bg-white dark:bg-slate-900">
+    <section class="py-10">
+      <div class="container card card-hover flex flex-col items-center justify-between gap-4 p-6 md:flex-row">
+        <div>
+          <h3 class="text-2xl font-semibold">Pasiruošusi pradėti?</h3>
+          <p class="muted">Trumpai aprašyk idėją — atrašau per 24 val.</p>
+        </div>
+        <a href="contact.html" class="btn btn-primary rounded-full px-6">Susisiekti →</a>
+      </div>
+    </section>
+
+    <div class="container py-10">
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <section>
+          <a href="/portfolio-2025/" class="flex items-center gap-2 font-semibold">
+            <span class="inline-flex h-8 w-8 items-center justify-center rounded bg-brand text-white dark:bg-white dark:text-slate-900">GT</span>
+            <span aria-label="Gabrielė Tamaševičiūtė">Gabrielė · Codeart</span>
+          </a>
+          <p class="muted mt-3">Front-end kūrėja ir dizainerė. Kuriu švarius, greitus ir prieinamus UI.</p>
+          <div class="mt-4 flex gap-2" aria-label="Socialiniai saitai">
+            <a class="btn btn-outline rounded-full p-2" href="https://github.com/gabwowce" aria-label="GitHub" title="GitHub">
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-4 1.5-4-2.5-6-3m12 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 18 3.77 5.07 5.07 0 0 0 17.91 1S16.73.65 14 2.48a13.38 13.38 0 0 0-5 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 3.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+            <a class="btn btn-outline rounded-full p-2" href="https://www.linkedin.com/in/gabriel%C4%97-tama%C5%A1evi%C4%8Di%C5%ABt%C4%97-06712526b/" aria-label="LinkedIn" title="LinkedIn">
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a class="btn btn-outline rounded-full p-2" href="mailto:gt1230112301@gmail.com" aria-label="El. paštas" title="El. paštas">
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16v16H4z"/><path d="M22 6 12 13 2 6"/></svg>
+            </a>
+          </div>
+        </section>
+
+        <nav aria-labelledby="flinks" class="card">
+         <div class="card-body">
+         
+          <ul class="mt-3 space-y-2">
+           <li><a class="link" href="index.html">Pagrindinis</a></li>
+            <li><a class="link" href="about.html">Apie</a></li>
+            <li><a class="link" href="portfolio.html">Portfolio</a></li>
+            <li><a class="link" href="ser">Paslaugos</a></li>
+            <li><a class="btn-outline" href="#">Kontaktai</a></li>
+          </ul>
+        </div>
+        </nav>
+
+        <section aria-labelledby="fnews" class="card">
+          <div class="card-body">
+            <h3 id="fnews" class="text-sm font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">Trumpa žinutė</h3>
+            <form class="mt-3 space-y-3" action="https://formspree.io/f/xeorkyne" method="POST">
+              <input class="w-full rounded-xl border-gray-300 focus:border-brand focus:ring-brand/30 dark:border-gray-700 dark:bg-slate-900" type="email" name="email" placeholder="El. paštas" required>
+              <input class="w-full rounded-xl border-gray-300 focus:border-brand focus:ring-brand/30 dark:border-gray-700 dark:bg-slate-900" type="text" name="Message" placeholder="Žinutė" required>
+              <input type="text" name="_gotcha" class="hidden">
+              <button type="submit" class="btn btn-primary rounded-full px-5">Parašyk 👋</button>
+              <small class="muted block">Parašyk — atrašau per 24 val.</small>
+            </form>
+          </div>
+        </section>
+      </div>
+
+      <div class="mt-10 flex flex-col items-center justify-between gap-3 border-t pt-6 sm:flex-row">
+        <span class="muted">© 2025 Gabrielė · Codeart</span>
+        <a class="link" href="mailto:gt1230112301@gmail.com">gt1230112301@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

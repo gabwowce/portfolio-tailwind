@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Base (be CSS var’ų) ===== */
+@layer base {
+  html { @apply scroll-smooth; }
+  body { @apply bg-white text-gray-900 font-sans dark:bg-slate-950 dark:text-gray-100; }
+}
+
+/* ===== Components (brand/accent iš config) ===== */
+@layer components {
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm font-medium
+           transition focus:outline-none focus:ring-2 focus:ring-offset-2 dark:focus:ring-offset-slate-950;
+  }
+  .btn-primary {
+    @apply btn bg-brand text-white hover:bg-brand-700 focus:ring-brand/40;
+  }
+  .btn-accent {
+    @apply btn bg-accent-500 text-white hover:bg-accent-600 focus:ring-accent/30;
+  }
+  .btn-outline {
+    @apply btn border border-gray-300 text-gray-800 hover:bg-gray-50
+           dark:border-gray-700 dark:text-gray-100 dark:hover:bg-white/5;
+  }
+  .btn-ghost {
+    @apply btn bg-transparent text-brand hover:bg-brand-50/60
+           dark:text-brand-300 dark:hover:bg-white/5;
+  }
+  .btn-link {
+    @apply inline-flex items-center gap-1 text-brand hover:text-brand-700
+           underline underline-offset-4 decoration-transparent hover:decoration-current px-0 py-0 rounded-none
+           dark:text-brand-300 dark:hover:text-brand-200;
+  }
+
+  /* Cards */
+  .card { @apply rounded-2xl bg-white dark:bg-slate-900 shadow-card ring-1 ring-black/5 dark:ring-white/5; }
+  .card-hover { @apply transition hover:-translate-y-0.5 hover:shadow-lg; }
+  .card-body { @apply p-5; }
+
+  /* Badges/Chips */
+  .badge { @apply inline-flex items-center rounded-full border px-2.5 py-1 text-xs font-medium; }
+  .badge-soft { @apply border-transparent bg-brand-50 text-brand-700 dark:bg-white/10 dark:text-brand-200; }
+  .badge-outline { @apply border-gray-300 text-gray-700 dark:border-gray-600 dark:text-gray-200; }
+  .badge-accent { @apply border-transparent bg-accent-100 text-accent-700 dark:bg-white/10 dark:text-accent-300; }
+
+  .chip { @apply inline-flex items-center gap-1 rounded-full bg-brand-100 px-5 py-3 text-base text-brand-900
+                 dark:bg-slate-800 dark:text-gray-300; }
+
+  /* Links */
+  .link { @apply text-brand hover:text-brand-700 underline-offset-2 hover:underline
+                 dark:text-brand-300 dark:hover:text-brand-200; }
+}
+
+/* ===== Utilities ===== */
+@layer utilities {
+  .surface { @apply bg-white dark:bg-slate-900; }
+  .section { @apply py-12 md:py-16; }
+  .muted   { @apply text-gray-600 dark:text-gray-400; }
+}

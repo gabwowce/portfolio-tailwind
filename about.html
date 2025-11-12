@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Apie — Gabrielė · Codeart</title>
+  <meta name="description" content="Apie mane: front-end programuotoja ir dizainerė. Vertybės, įgūdžiai, patirtis ir darbo principai." />
+  <link rel="icon" href="../img/favicon.svg" type="image/svg+xml" />
+  <style>
+  .sticky-aside{
+    position: sticky;
+    top: 6rem;          /* atstumas nuo viršaus, kad nesiliestų su headeriu */
+    align-self: start;  /* kad neliptų vertikaliai */
+    height: fit-content;
+  }
+</style>
+  <!-- Tailwind (tavo sugenerintas) -->
+  <link rel="stylesheet" href="/styles/tailwind.css" />
+  <!-- Tavo JS (mobile nav ir pan.) -->
+  <script src="/js/script.js" defer></script>
+</head>
+
+<body class="bg-white text-gray-900 dark:bg-slate-950 dark:text-gray-100">
+   <header class="border-b bg-white/80 backdrop-blur">
+    <nav class="container flex items-center justify-between py-5">
+       <a href="/portfolio-2025/" class="flex items-center gap-2 font-semibold">
+          <span class="inline-flex h-8 w-8 items-center justify-center rounded bg-brand text-white dark:bg-white dark:text-slate-900">GT</span>
+          <span aria-label="Gabrielė Tamaševičiūtė">Gabrielė · Codeart</span>
+        </a>
+     <div class="hidden gap-4 sm:flex justify-center items-center">
+        <a class="link" href="index.html">Pagrindinis</a>
+        <a class="link" href="about.html">Apie</a>
+        <a class="link" href="portfolio.html">Portfolio</a>
+        <a class="link" href="services.html">Paslaugos</a>
+        <a class="btn-outline" href="contact.html">Kontaktai</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO / INTRO -->
+  <section class="section">
+    <div class="container grid items-center gap-10 lg:grid-cols-[1.2fr_.8fr]">
+      <div>
+        <span class="badge badge-soft">Apie mane</span>
+        <h1 class="mt-3 text-4xl font-extrabold tracking-tight sm:text-5xl">
+          Front-end programuotoja <span class="font-normal">ir</span> UI/UX dizainerė
+        </h1>
+        <p class="muted mt-4 text-lg">
+          Kuriu švarius, greitus ir prieinamus vartotojo interfeisus — nuo idėjos ir prototipo iki gyvo produkto.
+          Dirbu su <strong>React/Next.js</strong>, <strong>Tailwind</strong>, <strong>TypeScript</strong>, o mobiliajame — <strong>React Native (Expo)</strong>.
+        </p>
+
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="portfolio.html" class="btn btn-primary">Peržiūrėti darbus</a>
+          <a href="contact.html" class="btn btn-outline">Susisiekti</a>
+        </div>
+
+        <!-- <ul class="mt-8 grid gap-3 sm:grid-cols-2">
+          <li class="chip">Prieinamumas (a11y) ir SEO</li>
+          <li class="chip">Našumo optimizavimas</li>
+          <li class="chip">Komponentų architektūra</li>
+          <li class="chip">Testai ir dokumentacija</li>
+        </ul> -->
+      </div>
+
+      <figure class="mx-auto max-w-md">
+         <div class="text-center">
+        <img src="img/avatar-waving4.webp" class="mx-auto h-auto w-36 sm:w-52 lg:w-80" alt="">
+      </div>
+        
+      </figure>
+    </div>
+  </section>
+
+  <main class="py-10 bg-brand-50">
+    <!-- ✅ pridėtas overflow-visible -->
+    <div class="container overflow-visible grid gap-8 lg:grid-cols-3 xl:gap-10">
+      <!-- Kairė kolona -->
+      <section class="space-y-6 lg:col-span-2">
+        <!-- About me -->
+        <article class="card">
+          <div class="card-body">
+            <h2 class="flex items-center gap-3 text-2xl font-bold">
+              <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-brand-50 text-brand">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor">
+                  <path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/>
+                </svg>
+              </span>
+              Apie mane
+            </h2>
+            <p class="muted mt-3 leading-relaxed">
+              Programuoti pradėjau 2023 m. Per tą laiką išbandžiau daug – nuo „desktop“ programų iki duomenų analitikos – ir
+              supratau, kad labiausiai žavi frontend. Kryptingai auginu meistriškumą, kartu formuoju ir UI/UX žinias, kad
+              produktai būtų nuoseklūs nuo A iki Z. Esu atsakinga, organizuota, aiškiai bendrauju ir prisiimu atsakomybę —
+              smalsi iš prigimties ir nepasimetu stresinėse situacijose.
+            </p>
+          </div>
+        </article>
+
+        <!-- Vertybės -->
+        <article class="card">
+          <div class="card-body">
+            <h2 class="flex items-center gap-3 text-2xl font-bold">
+              <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-brand-50 text-brand">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor">
+                  <path d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z"/>
+                </svg>
+              </span>
+              Vertybės
+            </h2>
+
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="chip"><b>Aiškumas:</b> tiksliai apibrėžtos užduotys, suderėti lūkesčiai.</span>
+              <span class="chip"><b>Struktūra:</b> darbą skaidau žingsniais.</span>
+              <span class="chip"><b>Patikimumas:</b> ką pažadu — padarau.</span>
+              <span class="chip"><b>Komunikacija:</b> greiti atsakymai, aiški būsena.</span>
+              <span class="chip"><b>Kodo kokybė:</b> pernaudojami komponentai, skaidri struktūra, testai.</span>
+              <span class="chip"><b>Atsakomybė:</b> man rūpi rezultatas.</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Minkštieji įgūdžiai -->
+        <article class="card">
+          <div class="card-body">
+            <h2 class="flex items-center gap-3 text-2xl font-bold">
+              <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-brand-50 text-brand">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor">
+                  <path d="M21 15a4 4 0 0 1-4 4H9l-6 4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/>
+                </svg>
+              </span>
+              Minkštieji įgūdžiai
+            </h2>
+
+            <ul class="mt-4 flex flex-wrap gap-2">
+              <li class="chip text-base">Prisitaikanti</li>
+              <li class="chip text-base">Dėmesys detalėms</li>
+              <li class="chip text-base">Kritinis mąstymas</li>
+              <li class="chip text-base">Gebėjimas derinti prioritetus</li>
+              <li class="chip text-base">Multitaskingas</li>
+              <li class="chip text-base">Komandinis darbas</li>
+              <li class="chip text-base">Problemų sprendimas</li>
+              <li class="chip text-base">Komunikacija</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Patirtis + Išsilavinimas -->
+        <article class="card">
+          <div class="card-body">
+            <h2 class="flex items-center gap-3 text-2xl font-bold">
+              <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-brand-50 text-brand">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="7" width="18" height="13" rx="2"></rect>
+                  <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                  <path d="M3 12h18"></path>
+                </svg>
+              </span>
+              Patirtis
+            </h2>
+
+            <ol class="relative mt-5 space-y-6 border-l pl-6 dark:border-white/10">
+              <li class="relative">
+                <span class="absolute -left-2 top-1.5 h-3 w-3 rounded-full bg-brand"></span>
+                <div>
+                  <h3 class="font-semibold">Web ir mobile app programuotoja · Laisvai samdoma</h3>
+                  <p class="muted">2025 kov. – dabar · Vilnius · React, Next.js, TypeScript, Tailwind, WordPress, Figma</p>
+                </div>
+              </li>
+              <li class="relative">
+                <span class="absolute -left-2 top-1.5 h-3 w-3 rounded-full bg-brand"></span>
+                <div>
+                  <h3 class="font-semibold">Jaunesnioji programuotoja · UVS</h3>
+                  <p class="muted">2024 birž. – dabar · Vilnius · C#/.NET, WPF (XAML), UI prieinamumas</p>
+                </div>
+              </li>
+              <li class="relative">
+                <span class="absolute -left-2 top-1.5 h-3 w-3 rounded-full bg-brand"></span>
+                <div>
+                  <h3 class="font-semibold">Planuotoja · Girteka Europe West</h3>
+                  <p class="muted">2021 spal. – 2023 rugp. · Vilnius · Planavimas, prioritetai, komunikacija</p>
+                </div>
+              </li>
+              <li class="relative">
+                <span class="absolute -left-2 top-1.5 h-3 w-3 rounded-full bg-brand"></span>
+                <div>
+                  <h3 class="font-semibold">Administratorė · UAB „Jarinta“</h3>
+                  <p class="muted">2021 kov. – 2021 rugs. · Vilnius</p>
+                </div>
+              </li>
+            </ol>
+
+            <hr class="my-6 border-t dark:border-white/10" aria-hidden="true" />
+
+            <h2 class="flex items-center gap-3 text-2xl font-bold">
+              <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-brand-50 text-brand">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor">
+                  <path d="M12 3 2 8l10 5 10-5-10-5zm0 7.5L5 8m14 0-7 2.5V21"/>
+                </svg>
+              </span>
+              Išsilavinimas
+            </h2>
+
+            <ul class="mt-4 space-y-4">
+              <li>
+                <h3 class="font-semibold">
+                  Vilniaus kolegija — Programų sistemos
+                  <span class="badge badge-soft ml-2">Vyksta</span>
+                </h3>
+                <p class="muted">2023–2027 · Vilnius</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <!-- Dešinė kolona (ASIDE) -->
+      <!-- ✅ pridėta .sticky-aside -->
+      <aside class="sticky-aside space-y-6 lg:col-span-1">
+        <!-- Profilis -->
+        <div class="card text-center">
+          <div class="card-body">
+            <div class="mx-auto mb-3 h-20 w-20 overflow-hidden rounded-full ring-2 ring-black/5 dark:ring-white/10">
+              <img src="../img/avatar-profile.webp" alt="Gabrielė – profilio nuotrauka" class="h-full w-full object-cover">
+            </div>
+            <h3 class="text-sm tracking-widest text-gray-500 dark:text-gray-400">GABRIELĖ</h3>
+            <p class="mt-1 font-medium">Frontend programuotoja</p>
+            <p class="muted text-sm">Vilnius, Lietuva</p>
+            <span class="badge badge-soft mt-3 inline-block">Atvira naujiems projektams</span>
+
+            <div class="mt-4 flex flex-col gap-2">
+              <a class="btn btn-primary w-full" href="mailto:gt1230112301@gmail.com">Parašyti el. laišką</a>
+              <a class="btn btn-outline w-full" href="../docs/CV.pdf" download>Atsisiųsti CV</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Įgūdžiai -->
+        <div class="card">
+          <div class="card-body">
+            <h4 class="font-semibold">Pagrindiniai įgūdžiai</h4>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <span class="chip">React</span><span class="chip">Next.js</span>
+              <span class="chip">TypeScript</span><span class="chip">Tailwind</span>
+              <span class="chip">React Native</span><span class="chip">Expo</span>
+              <span class="chip">WordPress</span><span class="chip">REST API</span>
+              <span class="chip">Figma</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kalbos -->
+        <div class="card">
+          <div class="card-body">
+            <h4 class="font-semibold">Kalbos</h4>
+            <div class="mt-3 space-y-2">
+              <div class="flex items-center justify-between">
+                <span>Lietuvių</span><span class="muted">Gimtoji</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span>Anglų</span><span class="muted">B2</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span>Rusų</span><span class="muted">B2</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+ <footer role="contentinfo" class="pt-16 border-t bg-white dark:bg-slate-900">
+  <!-- CTA juosta -->
+  <section class="py-10">
+    <div class="container card card-hover flex flex-col items-center justify-between gap-4 p-6 md:flex-row">
+      <div>
+        <h3 class="text-2xl font-semibold">Nori sukurti ką nors puikaus?</h3>
+        <p class="muted">Parašyk man savo idėją!</p>
+      </div>
+      <a href="/portfolio-2025/contact.html" class="btn btn-primary rounded-full px-6">
+        Susisiekti →
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer turinys -->
+  <div class="container py-10">
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Brand / About -->
+      <section>
+        <a href="/portfolio-2025/" class="flex items-center gap-2 font-semibold">
+          <span class="inline-flex h-8 w-8 items-center justify-center rounded bg-brand text-white dark:bg-white dark:text-slate-900">GT</span>
+          <span aria-label="Gabrielė Tamaševičiūtė">Gabrielė · Codeart</span>
+        </a>
+        <p class="muted mt-3">Front-end kūrėja ir dizainerė. Kuriu švarius, greitus ir prieinamus UI.</p>
+
+        <div class="mt-4 flex gap-2" aria-label="Socialiniai saitai">
+          <a class="btn btn-outline rounded-full p-2" href="https://github.com/gabwowce" aria-label="GitHub" title="GitHub">
+            <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-4 1.5-4-2.5-6-3m12 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 18 3.77 5.07 5.07 0 0 0 17.91 1S16.73.65 14 2.48a13.38 13.38 0 0 0-5 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 3.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a class="btn btn-outline rounded-full p-2" href="https://www.linkedin.com/in/gabriel%C4%97-tama%C5%A1evi%C4%8Di%C5%ABt%C4%97-06712526b/" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a class="btn btn-outline rounded-full p-2" href="mailto:gt1230112301@gmail.com" aria-label="El. paštas" title="El. paštas">
+            <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16v16H4z"/><path d="M22 6 12 13 2 6"/></svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- Quick links -->
+      <nav aria-labelledby="flinks" class="card">
+       <div class="card-body">
+         
+          <ul class="mt-3 space-y-2">
+           <li><a class="link" href="index.html">Pagrindinis</a></li>
+            <li><a class="link" href="about.html">Apie</a></li>
+            <li><a class="link" href="portfolio.html">Portfolio</a></li>
+            <li><a class="link" href="ser">Paslaugos</a></li>
+            <li><a class="btn-outline" href="#">Kontaktai</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Mini form / CTA -->
+      <section aria-labelledby="fnews" class="card">
+        <div class="card-body">
+          <h3 id="fnews" class="text-sm font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">Trumpa žinutė</h3>
+          <form class="mt-3 space-y-3" action="https://formspree.io/f/xeorkyne" method="POST">
+            <input class="w-full rounded-xl border-gray-300 focus:border-brand focus:ring-brand/30 dark:border-gray-700 dark:bg-slate-900" type="email" name="email" placeholder="El. paštas" required>
+            <input class="w-full rounded-xl border-gray-300 focus:border-brand focus:ring-brand/30 dark:border-gray-700 dark:bg-slate-900" type="text" name="Message" placeholder="Žinutė" required>
+            <input type="text" name="_gotcha" class="hidden">
+            <button type="submit" class="btn btn-primary rounded-full px-5">Parašyk 👋</button>
+            <small class="muted block">Parašyk — atrašau per 24 val.</small>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="mt-10 flex flex-col items-center justify-between gap-3 border-t pt-6 sm:flex-row">
+      <span class="muted">© 2025 Gabrielė · Codeart</span>
+      <a class="link" href="mailto:gt1230112301@gmail.com">gt1230112301@gmail.com</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
